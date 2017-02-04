@@ -21,7 +21,7 @@ const char* SSID     = "";
 const char* PASSWD = "";
 const String SEND_TO_URL = "http://192.168.81.1/api/v1/sensor/";
 const int PAYLOAD_SIZE = 256;
-const int LOOP_DELAY = 30000;  // 30 seconds
+const int LOOP_DELAY = 60000;  // 60 seconds, or 1 minute
 
 HTTPClient http;
 String ssidStr = String(SSID);
