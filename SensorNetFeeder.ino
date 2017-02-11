@@ -100,7 +100,7 @@ void genJSON(char* data) {
         
         char buffer[PAYLOAD_SIZE];        
         root.printTo(buffer, sizeof(buffer));
-        strcpy(data, buffer); // copy created json data to provided char array
+        strlcpy(data, buffer, sizeof(buffer)); // copy created json data to provided char array
 }
 
 String IPAddress2String(IPAddress address)
